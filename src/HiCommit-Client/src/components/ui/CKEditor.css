@@ -1,0 +1,123 @@
+@import "ckeditor-tailwind-reset/ckeditor-tailwind-reset";
+
+.main-container {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ck-content {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 1.6;
+    word-break: break-word;
+}
+
+.ck-placeholder {
+    font-style: italic;
+}
+
+.ck-editor__main > .ck-editor__editable {
+    border-radius: 0 0 6px 6px !important;
+    background-color: var(--ckeditor-background) !important;
+    border: 1px solid var(--ckeditor-border) !important;
+    padding-left: 11px;
+}
+
+.ck-sticky-panel__content {
+    border-radius: 6px 6px 0 0 !important;
+    border: 1px solid var(--ckeditor-border) !important;
+    border-bottom: 0 !important;
+    background-color: var(--ckeditor-background-secondary) !important;
+}
+
+.ck-sticky-panel__content .ck-toolbar {
+    background-color: var(--ckeditor-background-secondary) !important;
+    border-radius: 5px 5px 0 0 !important;
+}
+
+.ck-sticky-panel__content .ck-toolbar svg{
+    color: var(--ckeditor-color) !important;
+}
+
+.ck-sticky-panel__content .ck-toolbar button{
+    background-color: var(--ckeditor-background-secondary) !important;
+}
+
+.ck-sticky-panel__content .ck-toolbar button .ck-button__label{
+    color: var(--ckeditor-color) !important;
+}
+
+.ck-sticky-panel__content .ck-toolbar button:hover {
+    background-color: var(--ckeditor-background-hover) !important;
+}
+
+.ck-sticky-panel__content .ck-dropdown:hover > div > button{
+    background-color: var(--ckeditor-background-hover) !important;
+}
+
+.ck-sticky-panel__content .ck-toolbar__separator{
+    background-color: var(--ckeditor-separator) !important;
+}
+
+.ck-sticky-panel__content .ck-toolbar .ck-on{
+    background-color: var(--ckeditor-button-on) !important;
+}
+
+.ck-sticky-panel__content .ck-toolbar .ck-dropdown__panel{
+    background-color: var(--ckeditor-background) !important;
+}
+
+.ck-content a{
+    color: var(--ckeditor-link) !important;
+}
+
+.ck-content pre{
+    color: var(--ckeditor-color);
+    background-color: var(--ckeditor-background-figureCaption);
+}
+
+.ck-content figure > figcaption{
+    color: var(--ckeditor-color) !important;
+    background-color: var(--ckeditor-background-figureCaption) !important;
+    font-style: italic;
+}
+
+.ck-image-insert-form button{
+    display: flex !important; 
+    gap: 5px;
+}
+
+.ck-insert-table-dropdown__label, .ck-character-info__name, .ck-character-info__code, .ck-form__header__label{
+    color: var(--ckeditor-color) !important;
+}
+
+.ck-content pre.fancy-code {
+    border: 0;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: 8px;
+}
+
+.ck-powered-by-balloon{
+    display: none !important;
+}
+
+.ck-content pre.fancy-code::before {
+    content: "";
+    display: block;
+    height: 12px;
+    background: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NCAxMyI+CiAgPGNpcmNsZSBjeD0iNi41IiBjeT0iNi41IiByPSI2LjUiIGZpbGw9IiNGMzZCNUMiLz4KICA8Y2lyY2xlIGN4PSIyNi41IiBjeT0iNi41IiByPSI2LjUiIGZpbGw9IiNGOUJFNEQiLz4KICA8Y2lyY2xlIGN4PSI0Ny41IiBjeT0iNi41IiByPSI2LjUiIGZpbGw9IiM1NkM0NTMiLz4KPC9zdmc+Cg==);
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+}
+
+.ck-content pre.fancy-code-dark {
+    background: #191919;
+    color: #fff;
+}
+
+.ck-content pre.fancy-code-bright {
+    background: #dddfe0;
+    color: #000;
+}
